@@ -37,7 +37,6 @@ while(clientes.includes(entrada) == false){
 
 console.log("Bienvenid@ " + entrada + " !!");
 
-
 // Creamos una variable para la etiqueta "body"
 
 let padre = document.getElementById("container");
@@ -153,6 +152,25 @@ else{
 // Le asignamos un padre al elemento
 
 padre.append(saludoFinal);
+
+
+// Avisamos por console.log que el usuario presione el boton gris que se encuentra en el medio de la pantalla
+
+console.log("Presione el boton");
+
+
+// Traemos el boton a JS utilizando el ID
+
+let boton = document.getElementById("boton");
+
+// Le creamos un evento de click al boton y asignamos una funcion para cuando ocurra. Cuando el usuario hace click se crea una etiqueta "h2" y se agrega el HTML
+
+boton.addEventListener("click", respuestaClick);
+function respuestaClick(){
+    let saludamos = document.createElement("h2");
+    saludamos.innerHTML = "Gracias por corregir este trabajo !!";
+    padre.append(saludamos);
+}
 
 
 

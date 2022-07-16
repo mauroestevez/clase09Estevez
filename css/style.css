@@ -3,11 +3,6 @@
 /* Asignamos algunos estilos basicos con CSS para mostrar que funciona. En proximas entregas los prefeccionaremos */
 
 
-
-p{
-    color: white;
-}
-
 header{
     background-color: black;
 }
@@ -18,4 +13,22 @@ body{
 
 footer{
     background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+    font-size: xx-large;
+}
+
+p{
+    color: white;
+}
+
+button{
+    width: 80px;
+    height: 20px;
 }
